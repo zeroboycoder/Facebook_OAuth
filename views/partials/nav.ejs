@@ -1,0 +1,26 @@
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li class="brand">
+                    <h2><a href="/">OAuth</a></h2>
+                </li>
+                <% if(isAuthenticated){ %>
+                    <li>
+                        <a href="/">Home</a>
+                    </li>
+                    <li>
+                        <a href="/profile">Profile</a>
+                    </li>
+                <% } %> 
+                <div class="login_btn">
+                    <% if(isAuthenticated){ %>
+                        <li>
+                            <a href="/auth/logout">Logout</a>
+                        </li>
+                    <% } %>
+                </div>
+            </ul>
+        </nav>
+    </header>

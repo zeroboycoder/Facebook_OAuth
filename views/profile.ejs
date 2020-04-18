@@ -1,0 +1,17 @@
+<%- include("./partials/header") %> 
+<%- include("./partials/nav") %> 
+
+<div class="container">
+    <div class="profile_card">
+        <div class="profile_img">
+            <img src="/profile.jpg" alt="Profile Image">
+        </div>
+        <div class="profile_body">
+            <% users.forEach(user => { %>
+                <p class="userName"><%=user.name%></p>
+                <p class="userEamil"><%=user.email%></p>
+            <% }) %> 
+        </div>
+    </div>
+</div>
+<%- include("./partials/footer") %> 
